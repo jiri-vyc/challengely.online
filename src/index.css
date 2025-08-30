@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  --background: 0 0% 100%;   /* white */
+  --foreground: 240 10% 10%; /* dark gray text */
+}
+
+/* Light by default */
+html { color-scheme: light; }
+body { color: hsl(var(--foreground)); background: hsl(var(--background)); }
+
+/* Utility aliases the component uses */
+.bg-background { background-color: hsl(var(--background)) !important; }
+.bg-background\/60 { background-color: hsl(var(--background) / 0.6) !important; }
+.bg-background\/70 { background-color: hsl(var(--background) / 0.7) !important; }
+.text-background { color: hsl(var(--background)) !important; }
+.text-foreground { color: hsl(var(--foreground)) !important; }
+.text-foreground\/50 { color: hsl(var(--foreground) / 0.5) !important; }
+.text-foreground\/60 { color: hsl(var(--foreground) / 0.6) !important; }
+.text-foreground\/70 { color: hsl(var(--foreground) / 0.7) !important; }
+.border-foreground\/10 { border-color: hsl(var(--foreground) / 0.10) !important; }
+.border-foreground\/20 { border-color: hsl(var(--foreground) / 0.20) !important; }
+.border-foreground\/30 { border-color: hsl(var(--foreground) / 0.30) !important; }
+
+/* Color aliases used by the component */
+.bg-foreground { background-color: hsl(var(--foreground)) !important; }
+.bg-foreground\/10 { background-color: hsl(var(--foreground) / 0.10) !important; }
+
+.text-background { color: hsl(var(--background)) !important; }
+.text-foreground { color: hsl(var(--foreground)) !important; }
+.text-foreground\/60 { color: hsl(var(--foreground) / 0.6) !important; }
+.text-foreground\/70 { color: hsl(var(--foreground) / 0.7) !important; }
+
+.border-foreground\/10 { border-color: hsl(var(--foreground) / 0.10) !important; }
+.border-foreground\/20 { border-color: hsl(var(--foreground) / 0.20) !important; }
+
